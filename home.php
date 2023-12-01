@@ -20,10 +20,10 @@ if(isset($_POST['add_to_cart'])){
    $check_cart_numbers = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
 
    if(mysqli_num_rows($check_cart_numbers) > 0){
-      $message[] = 'already added to cart!';
+      $message[] = 'Đã được thêm vào giỏ hàng!';
    }else{
       mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, quantity, image) VALUES('$user_id', '$product_name', '$product_price', '$product_quantity', '$product_image')") or die('query failed');
-      $message[] = 'product added to cart!';
+      $message[] = 'Sản phẩm đã được thêm vào giỏ hàng!';
    }
 
 }
@@ -42,7 +42,7 @@ if(isset($_POST['add_to_cart'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css"> 
 
 </head>
 <body>
@@ -53,7 +53,7 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="content">
       <h3>TỰ TAY CHỌN SÁCH ĐẾN CỬA NHÀ BẠN.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod? Reiciendis ut porro iste totam.</p>
+      
       <a href="about.php" class="white-btn">Tìm hiểu thêm</a>
    </div>
 
@@ -78,7 +78,7 @@ if(isset($_POST['add_to_cart'])){
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
       <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
-      <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+      <input type="submit" value="Thêm vào giỏ hàng" name="add_to_cart" class="btn">
      </form>
       <?php
          }
@@ -99,12 +99,14 @@ if(isset($_POST['add_to_cart'])){
    <div class="flex">
 
       <div class="image">
-         <img src="images/about-img.jpg" alt="">
+         <img src="images/about.jpg" alt="">
       </div>
 
       <div class="content">
          <h3>Về chúng tôi</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <p>Chúng tôi là một shop bán sách online đáng tin cậy và đa dạng, mang đến trải nghiệm mua sắm sách thuận tiện và thú vị cho độc giả yêu sách trên toàn thế giới.
+
+Với bộ sưu tập sách phong phú và đa dạng, chúng tôi tự tin rằng bạn sẽ tìm thấy những cuốn sách phù hợp với sở thích và nhu cầu đọc sách của mình.</p>
          <a href="about.php" class="btn">Đọc thêm</a>
       </div>
 
@@ -116,7 +118,7 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="content">
       <h3>Bạn có thể hỏi?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
+      <p>Cảm ơn bạn đã chọn chúng tôi là điểm đến để tìm kiếm những câu chuyện tuyệt vời và kiến thức bổ ích. Chúng tôi hy vọng rằng bạn sẽ tận hưởng việc khám phá thế giới qua những trang sách của chúng tôi và chúng tôi sẽ tiếp tục phục vụ bạn trong những lần mua sắm sách tới. Hãy đặt câu hỏi của bạn chúng tôi sẽ giải đáp.</p>
       <a href="contact.php" class="white-btn">Liên hệ chúng tôi</a>
    </div>
 

@@ -51,7 +51,7 @@ if(isset($_POST['add_to_cart'])){
 
 <div class="heading">
    <h3>Cửa hàng của chúng tôi</h3>
-   <p> <a href="home.php">Trang chủ</a> / Cửa hàng </p>
+   <p> <a href="home.php">Trang chủ</a> </p>
 </div>
 
 <section class="products">

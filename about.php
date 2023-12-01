@@ -33,7 +33,7 @@ if(!isset($user_id)){
 
 <div class="heading">
    <h3>Về Chúng Tôi</h3>
-   <p> <a href="home.php">Trang chủ</a> / Chúng tôi </p>
+   <p> <a href="home.php">Trang chủ</a>  </p>
 </div>
 
 <section class="about">
@@ -41,13 +41,13 @@ if(!isset($user_id)){
    <div class="flex">
 
       <div class="image">
-         <img src="images/about-img.jpg" alt="">
+         <img src="images/about.jpg" alt="">
       </div>
 
       <div class="content">
          <h3>TẠI SAO CHỌN CHÚNG TÔI?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus aut hic molestias, reiciendis natus fuga, cumque excepturi veniam ratione iure. Excepturi fugiat placeat iusto facere id officia assumenda temporibus?</p>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <p>Chúng tôi là một shop bán sách online đáng tin cậy và đa dạng, mang đến trải nghiệm mua sắm sách thuận tiện và thú vị cho độc giả yêu sách trên toàn thế giới.</p>
+         <p>Với bộ sưu tập sách phong phú và đa dạng, chúng tôi tự tin rằng bạn sẽ tìm thấy những cuốn sách phù hợp với sở thích và nhu cầu đọc sách của mình.</p>
          <a href="contact.php" class="btn">Liên hệ chúng tôi</a>
       </div>
 

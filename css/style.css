@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-   --purple:#8e44ad;
+   --blue :#281f9e;
+   --orange :#FFA500;
    --red:#c0392b;
-   --orange:#f39c12;
+   --green:#12f31d;
    --black:#333;
+   --gotrang:#f0d5aa;
    --white:#fff;
    --light-color:#666;
    --light-white:#ccc;
@@ -21,10 +23,10 @@
    text-decoration: none;
    transition:all .2s linear;
 }
-
+/* Màu chữ chủ đạo */
 *::selection{
-   background-color: var(--purple);
-   color:var(--white);
+   background-color: var(--white);
+   color:var(--black);
 }
 
 *::-webkit-scrollbar{
@@ -37,7 +39,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-   background-color: var(--purple);
+   background-color: var(--gotrang);
 }
 
 html{
@@ -49,14 +51,16 @@ section{
    padding:3rem 2rem;
 }
 
+/* Sổ thông báo*/
 .empty{
-   padding:1.5rem;
+   padding: 1.5rem;
    text-align: center;
    border:var(--border);
    background-color: var(--white);
    color:var(--red);
    font-size: 2rem;
 }
+
 
 .message{
    position: sticky;
@@ -95,6 +99,8 @@ section{
    font-size: 4rem;
 }
 
+
+/* Nút tìm hiểu*/
 .btn,
 .option-btn,
 .delete-btn,
@@ -103,7 +109,7 @@ section{
    margin-top: 1rem;
    padding:1rem 3rem;
    cursor: pointer;
-   color:var(--white);
+   color:var(--black);
    font-size: 1.8rem;
    border-radius: .5rem;
    text-transform: capitalize;
@@ -112,16 +118,16 @@ section{
 .btn:hover,
 .option-btn:hover,
 .delete-btn:hover{
-   background-color: var(--black);
+   background-color: var(--light-bg);
 }
 
 .white-btn,
 .btn{
-   background-color: var(--purple);
+   background-color: var(--gotrang);
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--gotrang);
 }
 
 .delete-btn{
@@ -133,6 +139,7 @@ section{
    color:var(--black);
 }
 
+/* khung ảnh home*/
 .heading{
    min-height: 30vh;
    display: flex;
@@ -140,7 +147,7 @@ section{
    align-items: center;
    justify-content: center;
    gap:1rem;
-   background: url(../images/heading-bg.webp) no-repeat;
+   background: url(../images/heading.webp) no-repeat;
    background-size: cover;
    background-position: center;
    text-align: center;
@@ -158,7 +165,7 @@ section{
 }
 
 .heading p a{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .heading p a:hover{
@@ -216,17 +223,18 @@ section{
 }
 
 .form-container form p a{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .form-container form p a:hover{
    text-decoration: underline;
 }
 
+/*Phần đầu*/
+/* Trong header-1 có: flex( p, share)  */
 .header .header-1{
-   background-color: var(--light-bg);
+   background-color: var(--gotrang);
 }
-
 .header .header-1 .flex{
    padding:2rem;
    display: flex;
@@ -235,9 +243,33 @@ section{
    max-width: 1200px;
    margin:0 auto;
 }
+.header .header-1 .flex .share a{
+   font-size: 2.5rem;
+   margin-right: 1.5rem;
+   color:var(--black);
+}
 
+.header .header-1 .flex .share a:hover{
+   color:var(--black);
+}
+
+.header .header-1 .flex p{
+   font-size: 2rem;
+   color:var(--light-color);
+}
+
+.header .header-1 .flex p a{
+   color:var(--black);
+}
+
+.header .header-1 .flex p a:hover{
+   text-decoration: underline;
+   color:var(--white);
+}
+
+/* Trong hear-2 có: flex( logo, navbar, icons)*/
 .header .header-2{
-   background-color: var(--white);
+   background-color: var(--gotrang );
    box-shadow: var(--box-shadow);
 }
 
@@ -256,43 +288,19 @@ section{
    margin:0 auto;
    position: relative;
 }
-
-.header .header-1 .flex .share a{
-   font-size: 2.5rem;
-   margin-right: 1.5rem;
-   color:var(--black);
-}
-
-.header .header-1 .flex .share a:hover{
-   color:var(--purple);
-}
-
-.header .header-1 .flex p{
-   font-size: 2rem;
-   color:var(--light-color);
-}
-
-.header .header-1 .flex p a{
-   color:var(--purple);
-}
-
-.header .header-1 .flex p a:hover{
-   text-decoration: underline;
-}
-
 .header .header-2 .flex .logo{
-   font-size: 2.5rem;
-   color:var(--purple);
+   font-size: 2rem;
+   color:var(--black);
 }
 
 .header .header-2 .flex .navbar a{
    margin:0 1rem;
    font-size: 2rem;
-   color:var(--light-color);
+   color:var(--black);
 }
 
 .header .header-2 .flex .navbar a:hover{
-   color:var(--purple);
+   color:var(--white);
    text-decoration: underline;
 }
 
@@ -304,7 +312,7 @@ section{
 }
 
 .header .header-2 .flex .icons > *:hover{
-   color:var(--purple);
+   color:var(--white);
 }
 
 #menu-btn{
@@ -336,16 +344,19 @@ section{
 }
 
 .header .header-2 .flex .user-box p span{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .header .header-2 .flex .user-box .delete-btn{
    margin-top: 0;
 }
+/*Kết thúc phần đầu*/
 
+/* trang chủ*/
+/*home*/
 .home{
    min-height: 70vh;
-   background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home-bg.jpg) no-repeat;
+   background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
@@ -371,6 +382,8 @@ section{
    line-height: 1.5;
 }
 
+
+/* products */
 .products .box-container{
    max-width: 1200px;
    margin:0 auto;
@@ -420,6 +433,8 @@ section{
    background-color: var(--red);
 }
 
+
+/* about */
 .about .flex{
    max-width: 1200px;
    margin:0 auto;
@@ -455,6 +470,7 @@ section{
    color:var(--light-color);
 }
 
+/*Nơi liên hệ trong trang chủ*/
 .home-contact{
    background-color: var(--black);
 }
@@ -477,7 +493,9 @@ section{
    color:var(--light-white);
    font-size: 1.7rem;
 }
+/*Kết thúc trang chủ */
 
+/*Trang about*/
 .reviews{
    background-color: var(--light-bg);
 }
@@ -491,6 +509,7 @@ section{
    gap:1.5rem;
    justify-content: center;
 }
+
 
 .reviews .box-container .box{
    background-color: var(--white);
@@ -525,7 +544,7 @@ section{
 
 .reviews .box-container .box .stars i{
    font-size: 1.7rem;
-   color:var(--orange);
+   color:var(--orange );
    margin:.2rem;
 }
 
@@ -603,7 +622,9 @@ section{
    margin:0 auto;
    text-align: center;
 }
+/*Kết thúc trang về chúng tôi*/
 
+/*Trang contact*/
 .contact form h3{
    font-size: 2.5rem;
    text-transform: uppercase;
@@ -626,7 +647,9 @@ section{
    height: 20rem;
    resize: none;
 }
+/*Kết thúc trang liên hệ*/
 
+/*Trang cart*/
 .shopping-cart .box-container{
    max-width: 1200px;
    margin:0 auto;
@@ -731,7 +754,9 @@ section{
    opacity: .5;
    user-select: none;
 }
+/*Kết thúc trang giỏ hàng*/
 
+/*Trang thanh toán*/
 .display-order{
    max-width: 1200px;
    margin: 0 auto;
@@ -806,7 +831,9 @@ section{
    font-size: 1.8rem;
    margin:1rem 0;
 }
+/*Kết thúc trang checkout*/
 
+/*Trang orders*/
 .placed-orders .box-container{
    max-width: 1200px;
    margin:0 auto;
@@ -836,9 +863,11 @@ section{
 }
 
 .placed-orders .box-container .box p span{
-   color:var(--purple);
+   color:var(--black);
 }
+/*Kết thúc trang đặt hàng*/
 
+/*Trang tìm kiếm*/
 .search-form form{
    max-width: 1200px;
    margin:0 auto;
@@ -859,18 +888,12 @@ section{
    background-color: var(--light-bg);
    border-radius: .5rem;
 }
+/*Kết thúc trang tìm kiếm*/
 
 
-
-
-
-
-
-
- 
-
+/*Bắt đầu phần chân*/
 .footer{
-   background-color: var(--light-bg);
+   background-color: var(--gotrang);
 }
 
 .footer .box-container{
@@ -898,12 +921,12 @@ section{
 
 .footer .box-container .box p i,
 .footer .box-container .box a i{
-   color:var(--purple);
+   color:var(--black);
    padding-right: .5rem;
 }
 
 .footer .box-container .box a:hover{
-   color:var(--purple);
+   color:var(--light-white);
    text-decoration: underline;
 }
 
@@ -917,14 +940,12 @@ section{
 }
 
 .footer .credit span{
-   color:var(--purple);
+   color:var(--black);
 }
+/*Kết thúc phần chân*/
 
 
-
-
-/* media queries  */
-
+/* Truy vấn phương tiện  */
 @media (max-width:991px){
 
    html{

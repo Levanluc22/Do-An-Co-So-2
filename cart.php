@@ -51,7 +51,7 @@ if(isset($_GET['delete_all'])){
 
 <div class="heading">
    <h3>Giỏ hàng</h3>
-   <p> <a href="home.php">Trang chủ</a> / Giỏ hàng </p>
+   <p> <a href="home.php">Trang chủ</a>  </p>
 </div>
 
 <section class="shopping-cart">
@@ -66,7 +66,7 @@ if(isset($_GET['delete_all'])){
             while($fetch_cart = mysqli_fetch_assoc($select_cart)){   
       ?>
       <div class="box">
-         <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a>
+         <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('Xóa khỏi giỏ hàng?');"></a>
          <img src="uploaded_img/<?php echo $fetch_cart['image']; ?>" alt="">
          <div class="name"><?php echo $fetch_cart['name']; ?></div>
          <div class="price">$<?php echo $fetch_cart['price']; ?></div>

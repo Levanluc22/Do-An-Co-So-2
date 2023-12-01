@@ -72,7 +72,7 @@ if(isset($_POST['order_btn'])){
 
 <div class="heading">
    <h3>Thủ tục thanh toán</h3>
-   <p> <a href="home.php">Trang chủ</a> / Thủ tục thanh toán </p>
+   <p> <a href="home.php">Trang chủ</a> </p>
 </div>
 
 <section class="display-order">
@@ -135,7 +135,7 @@ if(isset($_POST['order_btn'])){
             <input type="text" name="city" required placeholder="Vd: Đà Nẵng...">
          </div>
          <div class="inputBox">
-            <span>District :</span>
+            <span>Quận :</span>
             <input type="text" name="state" required placeholder="Vd: Quận...">
          </div>
          <div class="inputBox">

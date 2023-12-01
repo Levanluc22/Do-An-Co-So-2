@@ -19,7 +19,7 @@ if(isset($message)){
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+            
          </div>
          <p> <a href="login.php">Đăng nhập</a> | <a href="register.php">Đăng kí</a> </p>
       </div>
@@ -27,7 +27,8 @@ if(isset($message)){
 
    <div class="header-2">
       <div class="flex">
-         <a href="home.php" class="logo">Sách</a>
+         <a href="home.php" class="logo">Thịnh Lực Shop
+         </a>
 
          <nav class="navbar">
             <a href="home.php">Trang chủ</a>

@@ -51,13 +51,13 @@ if(isset($_POST['send'])){
 
 <div class="heading">
    <h3>Liên hệ chúng tôi</h3>
-   <p> <a href="home.php">Trang chủ</a> / Liên hệ </p>
+   <p> <a href="home.php">Trang chủ</a>  </p>
 </div>
 
 <section class="contact">
 
    <form action="" method="post">
-      <h3>NÓI VÀI ĐIỀU!</h3>
+      <h3>TIN NHẮN</h3>
       <input type="text" name="name" required placeholder="Nhập tên của bạn" class="box">
       <input type="email" name="email" required placeholder="Nhập email của bạn" class="box">
       <input type="number" name="number" required placeholder="Nhập số điện thoại" class="box">

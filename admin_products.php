@@ -98,7 +98,6 @@ if(isset($_POST['update_product'])){
 <?php include 'admin_header.php'; ?>
 
 <!-- phần CRUD sản phẩm bắt đầu  -->
-
 <section class="add-products">
 
    <h1 class="title">Mua sản phẩm</h1>
@@ -110,28 +109,24 @@ if(isset($_POST['update_product'])){
       <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
       <input type="submit" value="Thêm sản phẩm" name="add_product" class="btn">
    </form>
-
 </section>
-
 <!-- phần CRUD sản phẩm kết thúc -->
 
 <!-- trưng bày sản phẩm  -->
-
 <section class="show-products">
-
    <div class="box-container">
-
       <?php
          $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
          if(mysqli_num_rows($select_products) > 0){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
       ?>
+
       <div class="box">
          <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
          <div class="name"><?php echo $fetch_products['name']; ?></div>
          <div class="price">$<?php echo $fetch_products['price']; ?></div>
          <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">Cập nhật</a>
-         <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">Xóa</a>
+         <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('Xóa sản phẩm này?');">Xóa</a>
       </div>
       <?php
          }
@@ -140,7 +135,6 @@ if(isset($_POST['update_product'])){
       }
       ?>
    </div>
-
 </section>
 
 <section class="edit-product-form">
@@ -152,6 +146,7 @@ if(isset($_POST['update_product'])){
          if(mysqli_num_rows($update_query) > 0){
             while($fetch_update = mysqli_fetch_assoc($update_query)){
    ?>
+
    <form action="" method="post" enctype="multipart/form-data">
       <input type="hidden" name="update_p_id" value="<?php echo $fetch_update['id']; ?>">
       <input type="hidden" name="update_old_image" value="<?php echo $fetch_update['image']; ?>">
@@ -171,12 +166,6 @@ if(isset($_POST['update_product'])){
    ?>
 
 </section>
-
-
-
-
-
-
 
 <!-- custom admin js file link  -->
 <script src="js/admin_script.js"></script>

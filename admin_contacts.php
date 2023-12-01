@@ -26,7 +26,7 @@ if(isset($_GET['delete'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Trang liên hệ</title>
 
-   <!--liên kết CDN phông chữ tuyệt vời-->
+   <!--liên kết CDN phông chữ-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- Liên kết tệp CSS quản trị viên tùy chỉnh-->
@@ -54,7 +54,7 @@ if(isset($_GET['delete'])){
       <p> Số : <span><?php echo $fetch_message['number']; ?></span> </p>
       <p> Email : <span><?php echo $fetch_message['email']; ?></span> </p>
       <p> Tin nhắn : <span><?php echo $fetch_message['message']; ?></span> </p>
-      <a href="admin_contacts.php?delete=<?php echo $fetch_message['id']; ?>" onclick="return confirm('delete this message?');" class="delete-btn">Xóa tin nhắn</a>
+      <a href="admin_contacts.php?delete=<?php echo $fetch_message['id']; ?>" onclick="return confirm('Xóa tin nhắn này??');" class="delete-btn">Xóa tin nhắn</a>
    </div>
    <?php
       };

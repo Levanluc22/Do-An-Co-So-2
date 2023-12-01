@@ -47,11 +47,15 @@ if(isset($_GET['delete'])){
          while($fetch_users = mysqli_fetch_assoc($select_users)){
       ?>
       <div class="box">
-         <p>  ID người dùng : <span><?php echo $fetch_users['id']; ?></span> </p>
-         <p> Họ và Tên : <span><?php echo $fetch_users['name']; ?></span> </p>
-         <p> Email : <span><?php echo $fetch_users['email']; ?></span> </p>
-         <p> Loại người dùng : <span style="color:<?php if($fetch_users['user_type'] == 'admin'){ echo 'var(--orange)'; } ?>"><?php echo $fetch_users['user_type']; ?></span> </p>
-         <a href="admin_users.php?delete=<?php echo $fetch_users['id']; ?>" onclick="return confirm('delete this user?');" class="delete-btn">Xóa người dùng</a>
+         <p>  ID người dùng : 
+         <span><?php echo $fetch_users['id']; ?> </span> </p>
+         <p> Họ và Tên : <span><?php echo $fetch_users['name']; ?> </span> </p>
+         <p> Email : <span><?php echo $fetch_users['email']; ?> </span> </p>
+         <p> Loại người dùng : <span style="color:
+         <?php if($fetch_users['user_type'] == 'admin'){
+             echo 'var(--orange)'; } ?>">
+             <?php echo $fetch_users['user_type']; ?> </span> </p>
+         <a href="admin_users.php?delete=<?php echo $fetch_users['id']; ?>" onclick="return confirm('Xóa người dùng này?');" class="delete-btn">Xóa người dùng</a>
       </div>
       <?php
          };
@@ -59,14 +63,6 @@ if(isset($_GET['delete'])){
    </div>
 
 </section>
-
-
-
-
-
-
-
-
 
 <!-- Liên kết tệp JS quản trị viên tùy chỉnh  -->
 <script src="js/admin_script.js"></script>

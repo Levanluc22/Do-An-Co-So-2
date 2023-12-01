@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-   --purple:#8e44ad;
+   --blue :#281f9e;
    --red:#c0392b;
-   --orange:#f39c12;
+   --green:#12f31d;
    --black:#333;
    --white:#fff;
+   --gotrang:#f0d5aa;
    --light-color:#666;
    --light-white:#ccc;
    --light-bg:#f5f5f5;
    --border:.1rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --orange :#FFA500;
 }
 
 *{
@@ -23,8 +25,8 @@
 }
 
 *::selection{
-   background-color: var(--purple);
-   color:var(--white);
+   background-color: var(--white );
+   color:var(--black);
 }
 
 *::-webkit-scrollbar{
@@ -37,7 +39,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-   background-color: var(--purple);
+   background-color: var(--black );
 }
 
 html{
@@ -60,7 +62,7 @@ section{
    color:var(--black);
    font-size: 4rem;
 }
-
+/* thanh thông báo*/
 .empty{
    padding:1.5rem;
    text-align: center;
@@ -99,6 +101,7 @@ section{
    transform: rotate(90deg);
 }
 
+/*Nút bấm*/
 .btn,
 .option-btn,
 .delete-btn,
@@ -107,7 +110,7 @@ section{
    margin-top: 1rem;
    padding:1rem 3rem;
    cursor: pointer;
-   color:var(--white);
+   color:var(--black);
    font-size: 1.8rem;
    border-radius: .5rem;
    text-transform: capitalize;
@@ -121,11 +124,11 @@ section{
 
 .white-btn,
 .btn{
-   background-color: var(--purple);
+   background-color: var(--gotrang );
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--gotrang);
 }
 
 .delete-btn{
@@ -144,11 +147,12 @@ section{
    }
 }
 
+/*Phần đầu*/
 .header{
    position: sticky;
    top:0; left:0; right:0;
    z-index: 1000;
-   background-color: var(--white);
+   background-color: var(--gotrang);
    box-shadow: var(--box-shadow);
 }
 
@@ -168,7 +172,7 @@ section{
 }
 
 .header .flex .logo span{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .header .flex .navbar a{
@@ -178,7 +182,7 @@ section{
 }
 
 .header .flex .navbar a:hover{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .header .flex .icons div{
@@ -189,7 +193,7 @@ section{
 }
 
 .header .flex .icons div:hover{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .header .flex .account-box{
@@ -218,7 +222,7 @@ section{
 }
 
 .header .flex .account-box p span{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .header .flex .account-box .delete-btn{
@@ -232,7 +236,7 @@ section{
 }
 
 .header .flex .account-box div a{
-   color:var(--orange);
+   color:var(--black);
 }
 
 .header .flex .account-box div a:hover{
@@ -270,12 +274,14 @@ section{
    margin-top: 1.5rem;
    padding:1.5rem;
    background-color: var(--light-bg);
-   color:var(--purple);
+   color:var(--black);
    font-size: 2rem;
    border-radius: .5rem;
    border:var(--border);
 }
+/*Kết thúc phần đầu */
 
+/*Trang quản lí sản phẩm*/
 .add-products form{
    background-color: var(--white);
    border-radius: .5rem;
@@ -381,7 +387,9 @@ section{
    color:var(--black);
    width: 100%;
 }
+/*Kết thúc trang sản phẩm*/
 
+/*Trang đặt hàng*/
 .orders .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, 30rem);
@@ -407,7 +415,7 @@ section{
 }
 
 .orders .box-container .box p span{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .orders .box-container .box form{
@@ -424,7 +432,9 @@ section{
    font-size: 1.8rem;
    color:var(--black);
 }
+/*Kết thúc trang đặt hàng*/
 
+/*Trang quản lí người dùng*/
 .users .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, 30rem);
@@ -451,13 +461,15 @@ section{
 }
 
 .users .box-container .box p span{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .users .box-container .box .delete-btn{
    margin-top: 0;
 }
+/*Kết thúc trang quản lí người dùng*/
 
+/*Trang quản lí tin nhắn*/
 .messages .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, 35rem);
@@ -484,33 +496,15 @@ section{
 }
 
 .messages .box-container .box p span{
-   color:var(--purple);
+   color:var(--black);
 }
 
 .messages .box-container .box .delete-btn{
    margin-top: 0;
 }
+/*Kết thúc trang quản lí tin nhắn*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries  */
+/* Truy vấn phương tiện*/
 
 @media (max-width:991px){
 

@@ -84,17 +84,7 @@ if(isset($_GET['delete'])){
       }
       ?>
    </div>
-
 </section>
-
-
-
-
-
-
-
-
-
 
 <!-- Liên kết tệp JS quản trị viên tùy chỉnh   -->
 <script src="js/admin_script.js"></script>
