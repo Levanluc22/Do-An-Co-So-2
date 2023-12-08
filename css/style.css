@@ -178,7 +178,7 @@ section{
       opacity: .2s;
    }
 }
-
+/* Đăng kí */
 .form-container{
    min-height: 100vh;
    background-color: var(--light-bg);
