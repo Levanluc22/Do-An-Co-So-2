@@ -405,7 +405,7 @@ section{
 }
 
 .products .box-container .box .image{
-   height: 30rem;
+   height: 20rem;
 }
 
 .products .box-container .box .name{
@@ -571,11 +571,13 @@ section{
    box-shadow: var(--box-shadow);
    overflow: hidden;
    border-radius: .5rem;
+   width: 50rem;
 }
 
 .authors .box-container .box img{
-   width: 100%;
-   height: 40rem;
+   width: 35%;
+   height: 30rem;
+   
    object-fit: cover;
 }
 

@@ -82,7 +82,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+            <i class="fas fa-star"></i>
          </div>
          <h3>Hồng Vy</h3>
       </div>
@@ -155,7 +155,7 @@ if(!isset($user_id)){
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+           
          </div>
          <h3>Võ Văn Thịnh</h3>
       </div>
@@ -168,7 +168,7 @@ if(!isset($user_id)){
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
+           
          </div>
          <h3>Lê Văn Lực</h3>
    </div>

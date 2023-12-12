@@ -332,10 +332,11 @@ section{
    border:var(--border);
    box-shadow: var(--box-shadow);
    background-color: var(--white);
+  
 }
 
 .show-products .box-container .box img{
-   height: 30rem;
+   height: 20rem;
 }
 
 .show-products .box-container .box .name{
@@ -346,7 +347,7 @@ section{
 
 .show-products .box-container .box .price{
    padding:1rem 0;
-   font-size: 2.5rem;
+   font-size: 2rem;
    color:var(--red);
 }
 
